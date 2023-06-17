@@ -96,26 +96,21 @@ body {
   }
 }
 @media (min-width: 0px) {
-  .main {
+  .carousel {
     padding-top: 11vh;
-    overflow: hidden;
     width: 100%;
     height: 70vh;
-    position: relative;
+  }
+  .main {
+    display: flex;
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in-out;
   }
   img {
-    opacity: 0;
-    width: 100%;
+    width: 100vw;
     height: 70vh;
     object-fit: cover;
     filter: brightness(70%);
-    position: absolute;
-  }
-  .activeImg {
-    opacity: 1;
-  }
-  .big {
-    display: none;
   }
 }
 .menu {
