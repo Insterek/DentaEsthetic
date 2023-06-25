@@ -55,7 +55,8 @@ body {
     position: relative;
     height: 100%;
   }
-  .fa-solid {
+  .fa-bars,
+  .fa-xmark {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -64,12 +65,13 @@ body {
     z-index: 2;
     transition: 0.2s linear;
     display: none;
+    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
   }
   .active {
     display: block;
   }
 }
-@media (min-width: 520px) and (max-width: 640px) and (orientation: landscape) {
+@media (min-width: 520px) and (max-width: 690px) and (orientation: landscape) {
   .navigation {
     height: 15vh;
   }
@@ -96,22 +98,65 @@ body {
   }
 }
 @media (min-width: 0px) {
-  .carousel {
-    padding-top: 11vh;
-    width: 100%;
-    height: 70vh;
-  }
-  .main {
+  .main-container {
     display: flex;
-    transform: translateX(0%);
-    transition: transform 0.5s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    padding-top: 11vh;
+    background: rgba(0, 0, 0, 0.5) url(images/esteticSmall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
   }
-  img {
-    width: 100vw;
-    height: 70vh;
-    object-fit: cover;
-    filter: brightness(70%);
+  .main-title,
+  .description,
+  .more {
+    color: whitesmoke;
+    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
   }
+  .main-title {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+  .description {
+    font-size: clamp(1.1rem, 5vw, 3rem);
+    width: 80%;
+    text-align: center;
+    padding: 3% 0 5% 0;
+  }
+  .more {
+    font-size: clamp(0.8rem, 3.5vw, 1.8rem);
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    padding: 5px 20px;
+  }
+}
+@media (min-width: 533px) and (orientation: landscape) {
+  .main-container {
+    height: 100vh;
+  }
+  .description {
+    padding: 3% 0 3% 0;
+  }
+}
+@media (min-width: 1024px) {
+  .main-container {
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.5) url(images/esteticBig.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .more:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #007fff;
+  }
+}
+@media (min-width: 0px) {
 }
 .menu {
   right: 0;
