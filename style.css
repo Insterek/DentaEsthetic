@@ -119,16 +119,16 @@ body {
     text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
   }
   .main-title {
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(1.6rem, 5vw, 3rem);
   }
   .description {
-    font-size: clamp(1.1rem, 5vw, 3rem);
+    font-size: clamp(0.8rem, 5vw, 2.2rem);
     width: 80%;
     text-align: center;
     padding: 3% 0 5% 0;
   }
   .more {
-    font-size: clamp(0.8rem, 3.5vw, 1.8rem);
+    font-size: clamp(0.8rem, 3.5vw, 1.5rem);
     background-color: transparent;
     border: 2px solid whitesmoke;
     padding: 5px 20px;
@@ -157,6 +157,85 @@ body {
   }
 }
 @media (min-width: 0px) {
+  .service {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .service-header {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 3% 0 3% 0;
+    color: #999;
+    font-size: clamp(1.5rem, 7vw, 2.6rem);
+  }
+  .service-containers {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 46%;
+    min-height: 30vh;
+    border: 2px solid #007fff;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    box-shadow: 1px 3px 20px -12px rgba(66, 68, 90, 1);
+  }
+  .service-description {
+    text-align: center;
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    color: #777;
+    padding: 10px;
+    margin: 4% 0 4% 0;
+  }
+  .service-title {
+    color: #202020;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    margin: 4% 0 4% 0;
+    text-align: center;
+  }
+  .icon-dent {
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+    border: 2px solid #c8c8c8;
+    color: #202020;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 4% 0 4% 0;
+  }
+  .service-button {
+    padding: 5px 10px;
+    border: 2px solid #777;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    text-transform: uppercase;
+    margin: 4% 0 4% 0;
+  }
+}
+@media (min-width: 533px) and (orientation: landscape) {
+  .service-container {
+    width: 26%;
+  }
+}
+@media (min-width: 800px) {
+  .service-containers {
+    width: 80%;
+  }
+  .service-container {
+    width: 22%;
+  }
+  .service-button:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #007fff;
+    border: #007fff 2px solid;
+  }
 }
 .menu {
   right: 0;
