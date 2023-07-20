@@ -5,9 +5,6 @@
   box-sizing: border-box;
   font-family: "Lora", serif;
 }
-body {
-  height: 300vh;
-}
 @media (min-width: 0px) {
   .navigation {
     position: fixed;
@@ -106,11 +103,12 @@ body {
     width: 100%;
     height: 80vh;
     padding-top: 11vh;
-    background: rgba(0, 0, 0, 0.5) url(images/esteticSmall.jpg);
+    background: rgba(0, 0, 0, 0.5) url(images/header/esteticSmall.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
+    border-bottom: 2px solid black;
   }
   .main-title,
   .description,
@@ -145,7 +143,7 @@ body {
 @media (min-width: 1024px) {
   .main-container {
     height: 80vh;
-    background: rgba(0, 0, 0, 0.5) url(images/esteticBig.jpg);
+    background: rgba(0, 0, 0, 0.5) url(images/header/esteticBig.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,13 +159,14 @@ body {
     width: 100%;
     min-height: 100vh;
   }
-  .service-header {
+  .header-title {
     text-transform: uppercase;
     width: 100%;
     text-align: center;
     padding: 3% 0 3% 0;
     color: #999;
-    font-size: clamp(1.5rem, 7vw, 2.6rem);
+    font-size: clamp(1.5rem, 7vw, 2.8rem);
+    text-shadow: -1px 1px 2px rgba(66, 68, 90, 1);
   }
   .service-containers {
     width: 90%;
@@ -237,6 +236,110 @@ body {
     border: #007fff 2px solid;
   }
 }
+@media (min-width: 0px) {
+  .opinion {
+    margin-top: 3%;
+    width: 100%;
+    min-height: 60vh;
+    background-color: #f2f2f2;
+    position: relative;
+  }
+  .arrow {
+    position: absolute;
+    border: none;
+    top: 50%;
+    transform: translate(0, -50%) scale(1);
+    font-size: clamp(2rem, 3vw, 2rem);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: transparent;
+  }
+  .arrow:hover {
+    transform: translate(0, -50%) scale(1.2);
+  }
+  .prev {
+    left: 4%;
+  }
+  .next {
+    right: 4%;
+  }
+  .formlist {
+    width: 77%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  .formlist::-webkit-scrollbar {
+    display: none;
+  }
+  .list {
+    display: flex;
+    width: max-content;
+  }
+  .person-opinion {
+    width: 65vw;
+    height: 44vh;
+    border: 2px solid #007fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c8c8c8;
+    margin-right: 30px;
+    box-shadow: 1px 4px 17px -4px rgba(66, 68, 90, 1);
+  }
+  .person-opinion:nth-of-type(1) {
+    margin-left: 20px;
+  }
+  .person-description {
+    text-align: center;
+  }
+  .person-img {
+    border-radius: 50%;
+    box-shadow: 1px 4px 17px -4px rgba(66, 68, 90, 1);
+  }
+  .person-name {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-weight: bold;
+  }
+}
 .menu {
   right: 0;
+}
+@media (min-width: 390px) {
+  .person-opinion {
+    padding: 5px;
+    width: 33vw;
+    height: 65vh;
+    margin-bottom: 3%;
+  }
+}
+@media (min-width: 650px) and (orientation: landscape) {
+  .person-opinion {
+    height: 40vh;
+  }
+}
+@media (min-width: 1024px) {
+  .person-opinion {
+    width: 25vw;
+    margin: 2% 2.2%;
+    transition: 0.2s;
+    transform: scale(1);
+  }
+  .person-description {
+    width: 80%;
+  }
+  .person-opinion:hover {
+    transform: scale(1.02);
+  }
+}
+@media (min-width: 1200px) {
+  .formlist {
+    width: 74%;
+  }
+  .person-opinion {
+    width: 18vw;
+  }
 }
