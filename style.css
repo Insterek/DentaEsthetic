@@ -164,9 +164,9 @@
     width: 100%;
     text-align: center;
     padding: 3% 0 3% 0;
-    color: #999;
-    font-size: clamp(1.5rem, 7vw, 2.8rem);
-    text-shadow: -1px 1px 2px rgba(66, 68, 90, 1);
+    color: #234;
+    font-weight: bold;
+    font-size: clamp(1.7rem, 7vw, 2.9rem);
   }
   .service-containers {
     width: 90%;
@@ -190,7 +190,7 @@
   .service-description {
     text-align: center;
     font-size: clamp(0.8rem, 3vw, 1rem);
-    color: #777;
+    color: #444;
     padding: 10px;
     margin: 4% 0 4% 0;
   }
@@ -291,12 +291,14 @@
     box-shadow: 1px 4px 17px -4px rgba(66, 68, 90, 1);
   }
   .person-opinion:nth-of-type(1) {
-    margin-left: 20px;
+    margin-left: 30px;
   }
   .person-description {
     text-align: center;
   }
   .person-img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     box-shadow: 1px 4px 17px -4px rgba(66, 68, 90, 1);
   }
@@ -322,6 +324,9 @@
   }
 }
 @media (min-width: 1024px) {
+  .opinion .header-title {
+    padding: 3% 0 0% 0;
+  }
   .person-opinion {
     width: 25vw;
     margin: 2% 2.2%;
@@ -341,5 +346,40 @@
   }
   .person-opinion {
     width: 18vw;
+  }
+}
+@media (min-width: 0px) {
+  .contact {
+    width: 100%;
+    min-height: 20vh;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dicon {
+    padding-right: 10px;
+    color: yellowgreen;
+  }
+  .direct-text {
+    color: whitesmoke;
+    padding-bottom: 8px;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+  }
+  .media-contact,
+  .direct-contact {
+    padding: 8px;
+  }
+  .micon {
+    font-size: clamp(1.7rem, 3vw, 1.8rem);
+    padding-right: 10px;
+    color: deepskyblue;
+  }
+}
+@media (min-width: 530px) and (orientation: landscape) {
+  .contact {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

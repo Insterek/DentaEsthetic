@@ -109,10 +109,10 @@
     <section class="opinion">
       <h3 class="header-title">opinion</h3>
       <div class="buttons">
-        <button id="prev" class="prev arrow">
+        <button id="prev" class="prev arrow" aria-label="prev image">
           <i class="fa-solid fa-angle-left a"></i>
         </button>
-        <button id="next" class="next arrow">
+        <button id="next" class="next arrow" aria-label="next image">
           <i class="fa-solid fa-angle-right"></i>
         </button>
       </div>
@@ -171,7 +171,30 @@
         </div>
       </div>
     </section>
-    <footer class="contact"></footer>
+    <footer class="contact">
+      <div class="direct-contact">
+        <p class="direct-text">
+          <i class="fa-solid fa-phone dicon"></i>111222333
+        </p>
+        <p class="direct-text">
+          <i class="fa-solid fa-location-pin dicon"></i>Mezline 19 East 17th St.
+        </p>
+        <p class="direct-text">
+          <i class="fa-solid fa-envelope dicon"></i>DentaEsthetic@gmail.com
+        </p>
+      </div>
+      <div class="media-contact">
+        <a class="fb" aria-label="Facebook" href="https://www.facebook.com/"
+          ><i class="fa-brands fa-facebook micon"></i
+        ></a>
+        <a class="twit" aria-label="Twitter" href="https://www.twitter.com"
+          ><i class="fa-brands fa-twitter micon"></i
+        ></a>
+        <a href="https://linkedin.com/" aria-label="Linkedin" class="linkedin"
+          ><i class="fa-brands fa-linkedin micon"></i
+        ></a>
+      </div>
+    </footer>
     <script src="scripts/menu.js"></script>
     <script src="scripts/scrollOpinion.js"></script>
   </body>
