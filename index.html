@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DentaEsthetic we will take care of your teeth with the greatest precision. The best dentist in town."
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,17 +21,25 @@
     <nav class="navigation">
       <h2 class="navigation-title">DentaEsthetic</h2>
       <ul class="navigation-list">
-        <li class="list-links"><a class="button" href="#">Home</a></li>
-        <li class="list-links"><a class="button" href="#">Service</a></li>
-        <li class="list-links"><a class="button" href="#">Opinion</a></li>
-        <li class="list-links"><a class="button" href="#">Contact</a></li>
+        <li class="list-links">
+          <button data-link="home" class="button">Home</button>
+        </li>
+        <li class="list-links">
+          <button data-link="service" class="button">Service</button>
+        </li>
+        <li class="list-links">
+          <button data-link="opinion" class="button">Opinion</button>
+        </li>
+        <li class="list-links">
+          <button data-link="contact" class="button">Contact</button>
+        </li>
       </ul>
       <div class="burger">
         <i class="fa-solid fa-bars active"></i>
         <i class="fa-solid fa-xmark"></i>
       </div>
     </nav>
-    <header class="main">
+    <header id="home">
       <div class="main-container">
         <h1 class="main-title">Your Dentist</h1>
         <p class="description">
@@ -37,7 +49,7 @@
         <button class="more">See More</button>
       </div>
     </header>
-    <section class="service">
+    <section id="service">
       <h2 class="service-header header-title">Service</h2>
       <div class="service-containers">
         <div class="service-container">
@@ -106,7 +118,7 @@
         </div>
       </div>
     </section>
-    <section class="opinion">
+    <section id="opinion">
       <h3 class="header-title">opinion</h3>
       <div class="buttons">
         <button id="prev" class="prev arrow" aria-label="prev image">
@@ -171,7 +183,7 @@
         </div>
       </div>
     </section>
-    <footer class="contact">
+    <footer id="contact">
       <div class="direct-contact">
         <p class="direct-text">
           <i class="fa-solid fa-phone dicon"></i>111222333
@@ -197,5 +209,6 @@
     </footer>
     <script src="scripts/menu.js"></script>
     <script src="scripts/scrollOpinion.js"></script>
+    <script src="scripts/menuScroll.js"></script>
   </body>
 </html>
