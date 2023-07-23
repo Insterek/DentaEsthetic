@@ -15,4 +15,4 @@ git clone https://github.com/Insterek/DentaEsthetic.git
 
 ## Lighthouse test:
 
-![lighthuse test](images/others/lighthouse.jpg)
+![lighthuse test ](images/others/Lighthouse-test.png)

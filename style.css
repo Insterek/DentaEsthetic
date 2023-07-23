@@ -181,6 +181,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     width: 46%;
     min-height: 30vh;
     border: 2px solid #007fff;
@@ -312,7 +313,7 @@
 .menu {
   right: 0;
 }
-@media (min-width: 390px) {
+@media (min-width: 390px) and (orientation: landscape) {
   .person-opinion {
     padding: 5px;
     width: 33vw;
@@ -320,7 +321,7 @@
     margin-bottom: 3%;
   }
 }
-@media (min-width: 650px) and (orientation: landscape) {
+@media (min-width: 800px) and (orientation: landscape) {
   .person-opinion {
     height: 40vh;
   }
