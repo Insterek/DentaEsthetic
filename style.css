@@ -207,10 +207,33 @@
   .icon-dent {
     font-size: clamp(1.2rem, 3vw, 1.4rem);
     border: 2px solid #c8c8c8;
-    color: #202020;
     padding: 8px;
     border-radius: 20px;
     margin: 4% 0 4% 0;
+  }
+  .fa-tooth {
+    color: #92a8d1;
+  }
+  .fa-face-grimace {
+    color: #ffcc5c;
+  }
+  .fa-teeth-open {
+    color: #f2ae72;
+  }
+  .fa-star-half {
+    color: #ffef96;
+  }
+  .fa-truck-medical {
+    color: #c94c4c;
+  }
+  .fa-circle {
+    color: #6b5b95;
+  }
+  .fa-face-smile {
+    color: #feb236;
+  }
+  .fa-bore-hole {
+    color: #b5e7a0;
   }
   .service-button {
     padding: 5px 10px;
